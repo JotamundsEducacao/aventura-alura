@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>A vida de Biruleibe</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img class="img" src="img/cenario-passo0.webp" alt="">
+            <p>Você é Biruleibe. Biruleibe nasceu em uma comunidade no centro da cidade. Sua vida sempre foi muito pobre. Seu pai vivia bêbado e sua mãe trabalhava o dia todo. Aos 15 anos de idade ele resolver mudar de vida. Porém, agora, você deve escolher as ações da vida dele.</p>
+            <p>Qual deve ser seu primeiro emprego?</p>
+            <button class="btn-proximo" data-proximo="1">Vendedor de Bala</button>
+            <button class="btn-proximo" data-proximo="2">Foguetinho</button>
+        </div>
+        
+        <div class="passo" id="passo-1"> <!--Vendedor de Bala-->
+            <p>Biruleibe inicia sua carreira como vendedor de bala. Aos poucos, ele vai aumentando sua renda e seu lucro e compra uma bicicleta. Ele começa a fazer entregas. Com 18 anos ele quer tirar habilitação.</p>
+            <p>Qual carta ele deve tirar?</p>
+            <button class="btn-proximo" data-proximo="3">Carro</button>
+            <button class="btn-proximo" data-proximo="4">Moto</button>
+        </div>
+
+        <div class="passo" id="passo-2"> <!--Foguetinho-->
+            <p>Biruleibe começa sua carreira como foguetinho. Sempre que a polícia invade a favela em que ele mora é ele quem solta fogos e rojões para avisar os traficantes. Ele ganha muito dinheiro com isso. Aos 18 anos, ele quer tirar habilitação.</p>
+            <p>Qual carta ele deve tirar?</p>
+            <button class="btn-proximo" data-proximo="6">Carro</button>
+            <button class="btn-proximo" data-proximo="7">Moto</button>
+        </div>
+
+
+        <!-- FINAL FELIZ -->
+        <div class="passo" id="passo-3"> <!--Carro-->
+            <img class="img" src="img/uberEats.png" alt="">
+            <p>Biruleibe comprou um carro e começou a ganhar muito dinheiro fazendo Uber e 99. Com o dinheiro que ele ganhou, ele comprou um comércio e virou empreendedor. Hoje em dia ele tem uma rede de supermercados e ganha muito dinheiro, vivendo bem e feliz com sua familia!</p>
+            <button class="btn-proximo" data-proximo="5">Continuar</button>
+        </div>
+
+        <div class="passo" id="passo-4"> <!--Moto-->
+            <img class="img" src="img/uberEats.png" alt="">
+            <p>Biruleibe comprou uma moto e começou a ganhar muito dinheiro fazendo entregas e Uber Eats. Fazendo entregas e Uber Eats com sua moto, Biruleibe ganhou muito dinheiro. Ele criou uma empresa de entregas de caminhão, van, carro e moto, e ganhou muito dinheiro, vivendo bem e feliz com a sua familia!</p>
+            <button class="btn-proximo" data-proximo="5">Continuar</button>
+        </div>
+
+        <div class="passo" id="passo-5"> <!--Final Feliz-->
+            <p id="final"><strong>FINAL FELIZ!</strong></p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar?</button>
+        </div>
+
+        <!-- FINAL TRISTE -->
+
+        <div class="passo" id="passo-6">
+            <img class="img" src="img/golfSapao.jpg" alt="">
+            <p>Biruleibe comprou uma nave e tá tirando na na quebrada. Com o tempo, ele foi promovido a traficante do morro.</p>
+            <p>Num dia frio de clima nublado, ele estava andando de carro transportando drogas para revender em ourtas favlas. Parado no sinal, um carro parou ao lado dele. Ao abrir o vidro, o motorista encheu ele de tiro; ele estava a mando de uma facção rival. Assim acaba a vida de Biruleibe, morto com 19 anos de idade.</p>
+            <button class="btn-proximo" data-proximo="8">Continuar</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <img class="img" src="img/bmw1200.jpg" alt="">
+            <p>Biruleibe comprou um foguetão e tá pegando várias. Com o tempo, ele foi promovido a traficante.</p>
+            <p>Ele estava andando de moto sem capacete e de cinelo, transportando drogas numa falsa mochila de entregas. A ROCAM deu ordem de parada pra ele. Ele não obedeceu e tentou dar pinote. No meio da fuga em velocidade ele perdeu  controla da moto e acertou em cheio um caminhao que vinha na contra-mão. Ele morreu na hora com 19 anos de idade.</p>
+            <button class="btn-proximo" data-proximo="8">Continuar</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p id="final"><strong>FINAL TRISTE</strong></p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar?</button>
+        </div>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
